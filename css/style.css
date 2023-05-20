@@ -1,0 +1,24 @@
+margin: 20px 0;
+}
+.info-boxes {
+    margin-top: 15px;
+    background-color: #a8a809;
+}
+.info-box {
+    background: white;
+    margin: 20px 10px;
+    padding: 30px;
+    box-shadow: 1px 1px 2px #e7e7e7;
+    border-radius: 4px;
+    min-height: 275px;
+}
+#home-carousel {
+}
+.social-links i{
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.food-thumbnail {
+    min-height: 400px;
+}

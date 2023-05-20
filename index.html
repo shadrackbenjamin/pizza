@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pizza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Menu</h2>
+<table class="table table-striped">
+    <tr>
+        <th>Toppings</th>
+        <th>Price</th>
+        <th>Calories</th>
+        <th>Rating</th>
+    </tr>
+    {% for pizza in site.data.pizzas %}
+    <tr>
+        <td>{{ pizza.name }}</td>
+        <td>{{ pizza.price }}</td>
+        <td>{{ pizza.calories }}</td>
+        <td>{{ pizza.rating }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+
+<h2>Featured Menu Items</h2>
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail food-thumbnail">
+            <img class="img-responsive img-rounded" width="100%" src="http://lorempixel.com/300/200/food" alt="food">
+            <div class="caption">
+                <h3>Drew's Special</h3>
+                <p>Lettuce, tomato, tofurkey. All the best vegan toppings!</p>
+                <p>
+                    <strong>Price: $10</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail food-thumbnail">
+            <img class="img-responsive img-rounded" width="100%" src="http://lorempixel.com/300/200/food" alt="food">
+            <div class="caption">
+                <h3>Nick's Special</h3>
+                <p>Whatever Mollie makes.</p>
+                <p>
+                    <strong>Price: $10</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail food-thumbnail">
+            <img class="img-responsive img-rounded" width="100%" src="http://lorempixel.com/300/200/food" alt="food">
+            <div class="caption">
+                <h3>Matt's Special</h3>
+                <p>It is just Soylent.</p>
+                <p>
+                    <strong>Price: $10</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail food-thumbnail">
+            <img class="img-responsive img-rounded" width="100%" src="http://lorempixel.com/300/200/food" alt="food">
+            <div class="caption">
+                <h3>Brian's Special</h3>
+                <p>Covered in Awesome Sauce!</p>
+                <p>
+                    <strong>Price: $10</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail food-thumbnail">
+            <img class="img-responsive img-rounded" width="100%" src="http://lorempixel.com/300/200/food" alt="food">
+            <div class="caption">
+                <h3>Keith's Special</h3>
+                <p>It only costs about 40 diapers!</p>
+                <p>
+                    <strong>Price: $10</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <div class="thumbnail food-thumbnail">
+            <img class="img-responsive img-rounded" width="100%" src="http://lorempixel.com/300/200/food" alt="food">
+            <div class="caption">
+                <h3>Justin's Special</h3>
+                <p>Taste great after sleeping in!</p>
+                <p>
+                    <strong>Price: $10</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
